@@ -1,6 +1,4 @@
---upgrade pip
-setuptools>=68.0
-wheel
+
 fastapi==0.116.1
 uvicorn==0.23.1
 numpy==1.24.4
