@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: backend-sewa
+    env: python
+    plan: free  # or starter/standard depending on your choice
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn -w 4 -k uvicorn.workers.UvicornWorker main:app
+    pythonVersion: 3.12.6
+    autoDeploy: true
+    repo: https://github.com/sambhavverma2004/backend-sewa
